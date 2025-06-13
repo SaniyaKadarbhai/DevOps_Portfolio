@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSync: Collaborative Shopping Lists - DevOps Implementation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">ShopSync</span>
+                <span class="logo-subtitle">DevOps Project | Team B1</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#overview" class="nav-link">Overview</a></li>
+                <li><a href="#strategy" class="nav-link">Strategy</a></li>
+                <li><a href="#implementation" class="nav-link">Implementation</a></li>
+                <li><a href="#results" class="nav-link">Results</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="hero-bg-effect"></div> <div class="container">
+            <h1 class="shop-title animate__animated animate__fadeInDown">🚀 ShopSync</h1>
+            <h2 class="shop-subtitle animate__animated animate__fadeInLeft animate__delay-0-5s">Collaborative Shopping Lists</h2>
+            <p class="shop-tagline animate__animated animate__fadeInUp animate__delay-1s">A Comprehensive DevOps Implementation Project</p>
+            <div class="hero-buttons animate__animated animate__zoomIn animate__delay-1-5s">
+                <a href="#implementation" class="btn btn-primary">See Implementation</a>
+                <a href="#tech-stack" class="btn btn-secondary">Explore Tech Stack</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-block light-bg">
+        <div class="container">
+            <h2 class="section-heading">ShopSync: The Collaborative Shopping Experience</h2>
+            <img src="website_image.jpg" alt="Hosted Website Screenshot" class="section-image" />
+            <p class="section-description">
+                ShopSync is a real-time, intuitive shopping list application designed to streamline collaborative grocery and other shopping needs. It empowers users to securely share and synchronize lists with family, friends, or colleagues, ensuring everyone stays on the same page.
+                Our focus for this project was not just the application itself, but the robust DevOps pipeline enabling its efficient development, testing, and deployment.
+            </p>
+        </div>
+    </section>
+
+    <section id="overview" class="overview-section">
+        <div class="container">
+            <h2 class="section-title">Project Overview</h2>
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <div class="card-header">
+                        <i class="fas fa-bullseye"></i>
+                        <h3>Mission</h3>
+                    </div>
+                    <p>To deliver a highly available and scalable collaborative shopping list application, built and managed through a robust DevOps lifecycle, ensuring rapid feature delivery and operational excellence.</p>
+                </div>
+                <div class="overview-card">
+                    <div class="card-header">
+                        <i class="fas fa-users"></i>
+                        <h3>Target Users</h3>
+                    </div>
+                    <p>Ideal for families, roommates, small teams, and anyone needing seamless, real-time coordination for shared shopping activities.</p>
+                </div>
+                <div class="overview-card">
+                    <div class="card-header">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Technical Stack</h3>
+                    </div>
+                    <p>Frontend: React.js & Redux; Backend: Node.js & Express; Database: MongoDB. All containerized with Docker and deployed on AWS EC2.</p>
+                </div>
+                <div class="overview-card">
+                    <div class="card-header">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Key Metrics</h3>
+                    </div>
+                    <p>Targeted 99.9% uptime, sub-second API response times, fully automated deployments, and zero-downtime releases.</p>
+                </div>
+            </div>
+
+            <div class="devops-objectives-block">
+                <h3 class="sub-heading">Core DevOps Objectives Achieved:</h3>
+                <ul class="feature-list">
+                    <li>✅ Scalable and containerized deployment using Docker.</li>
+                    <li>✅ Automated CI/CD pipeline with Jenkins and GitHub Actions.</li>
+                    <li>✅ Comprehensive automated testing integrated into the pipeline.</li>
+                    <li>✅ Production-ready environments orchestrated with Nginx.</li>
+                    <li>✅ Infrastructure as Code (IaC) principles for environment setup.</li>
+                    <li>✅ Continuous Monitoring and Feedback Loops for proactive issue detection.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-block white-bg">
+        <div class="container">
+            <h2 class="section-heading">The ShopSync DevOps Lifecycle</h2>
+            <img src="devops-cycle.jpg" alt="DevOps Lifecycle" class="section-image" />
+            <p class="section-description">This visual represents the continuous flow of our DevOps practices, from planning and development to deployment and monitoring, ensuring constant improvement and stability for ShopSync.</p>
+        </div>
+    </section>
+
+    <section id="strategy" class="strategy-section">
+        <div class="container">
+            <h2 class="section-title">DevOps Implementation Strategy</h2>
+            <div class="strategy-grid">
+                <div class="strategy-phase" data-aos="fade-up" data-aos-delay="100">
+                    <div class="phase-number">01</div>
+                    <h3>Infrastructure Provisioning & Configuration</h3>
+                    <p>Automating the setup of cloud resources and server configurations.</p>
+                    <div class="phase-tech">
+                        <i class="fab fa-aws" title="AWS"></i>
+                        <i class="fab fa-linux" title="Linux"></i>
+                        <i class="fas fa-server" title="Nginx"></i>
+                    </div>
+                </div>
+                <div class="strategy-phase" data-aos="fade-up" data-aos-delay="200">
+                    <div class="phase-number">02</div>
+                    <h3>Version Control & Collaboration</h3>
+                    <p>Establishing robust code management and collaborative workflows.</p>
+                    <div class="phase-tech">
+                        <i class="fab fa-git-alt" title="Git"></i>
+                        <i class="fab fa-github" title="GitHub"></i>
+                    </div>
+                </div>
+                <div class="strategy-phase" data-aos="fade-up" data-aos-delay="300">
+                    <div class="phase-number">03</div>
+                    <h3>CI/CD Pipeline Automation</h3>
+                    <p>Implementing continuous integration and continuous deployment for rapid releases.</p>
+                    <div class="phase-tech">
+                        <i class="fab fa-jenkins" title="Jenkins"></i>
+                        <i class="fas fa-code-branch" title="CI/CD"></i>
+                        <i class="fab fa-github-actions" title="GitHub Actions"></i>
+                    </div>
+                </div>
+                <div class="strategy-phase" data-aos="fade-up" data-aos-delay="400">
+                    <div class="phase-number">04</div>
+                    <h3>Containerization & Orchestration</h3>
+                    <p>Packaging applications into isolated environments for consistency and scalability.</p>
+                    <div class="phase-tech">
+                        <i class="fab fa-docker" title="Docker"></i>
+                        <i class="fas fa-cubes" title="Containerization"></i>
+                        <i class="fas fa-compass" title="Orchestration"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="methodology" data-aos="fade-up">
+                <h3>Our Core Methodologies</h3>
+                <p>We adhered to Infrastructure as Code (IaC) for repeatable environments, adopted GitOps principles with strict Pull Request reviews, utilized Pipeline as Code for version-controlled build processes, and prioritized Container-First Deployment for consistent application delivery.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="data-viz" class="data-visualization-section">
+        <div class="container">
+            <h2 class="section-title">Live System Insights</h2>
+            <div class="dashboard-grid">
+                <div class="dashboard-card status-metrics-card" data-aos="fade-right">
+                    <div class="card-header-holo">
+                        <i class="fas fa-chart-area"></i>
+                        <h3>SYSTEM HEALTH & METRICS</h3>
+                        <div class="status-indicator online pulse-green"></div>
+                    </div>
+                    <div class="metrics-list">
+                        <div class="metric-line">
+                            <span class="metric-label">Uptime:</span>
+                            <span class="metric-value">99.9%</span>
+                            <div class="metric-bar"><div class="metric-fill" style="width: 99.9%;"></div></div>
+                        </div>
+                        <div class="metric-line">
+                            <span class="metric-label">Avg. Latency:</span>
+                            <span class="metric-value">84ms</span>
+                            <div class="metric-bar"><div class="metric-fill" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="metric-line">
+                            <span class="metric-label">CPU Usage:</span>
+                            <span class="metric-value">45%</span>
+                            <div class="metric-bar"><div class="metric-fill" style="width: 45%;"></div></div>
+                        </div>
+                        <div class="metric-line">
+                            <span class="metric-label">Memory Used:</span>
+                            <span class="metric-value">68%</span>
+                            <div class="metric-bar"><div class="metric-fill" style="width: 68%;"></div></div>
+                        </div>
+                    </div>
+                    <div class="dynamic-dots-container">
+                        <div class="dynamic-dot d-1"></div>
+                        <div class="dynamic-dot d-2"></div>
+                        <div class="dynamic-dot d-3"></div>
+                        <div class="dynamic-dot d-4"></div>
+                    </div>
+                </div>
+
+                <div class="dashboard-card terminal-deployment-card" data-aos="fade-left">
+                    <div class="card-header-holo">
+                        <i class="fas fa-terminal"></i>
+                        <h3>DEPLOYMENT LOGS & STATUS</h3>
+                        <div class="status-indicator online pulse-blue"></div>
+                    </div>
+                    <div class="terminal-output">
+                        <div class="terminal-line"><span class="prompt">$</span> <span class="command">git pull origin main</span></div>
+                        <div class="terminal-line"><span class="output">Already up to date.</span></div>
+                        <div class="terminal-line"><span class="prompt">$</span> <span class="command">docker-compose up -d --build</span></div>
+                        <div class="terminal-line"><span class="output">Building frontend...</span></div>
+                        <div class="terminal-line"><span class="output">Building backend...</span></div>
+                        <div class="terminal-line"><span class="output">Creating shopsync-frontend...<span class="status running">Done</span></span></div>
+                        <div class="terminal-line"><span class="output">Creating shopsync-backend...<span class="status running">Done</span></span></div>
+                        <div class="terminal-line"><span class="prompt">$</span> <span class="command typing-animation">kubectl get services</span><span class="cursor">|</span></div>
+                        <div class="terminal-line"><span class="output">shopsync-svc    ClusterIP   10.0.0.x   &lt;none&gt;   80/TCP</span></div>
+                        <div class="terminal-line"><span class="output">mongodb-svc     ClusterIP   10.0.0.y   &lt;none&gt;   27017/TCP</span></div>
+                    </div>
+                    <div class="deployment-summary">
+                        <div class="summary-item">
+                            <i class="fas fa-rocket"></i>
+                            <span class="sum-value">124</span>
+                            <span class="sum-label">Total Deployments</span>
+                        </div>
+                        <div class="summary-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span class="sum-value">98%</span>
+                            <span class="sum-label">Success Rate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="network-animation-container">
+                <div class="network-node node-dev">DEV</div>
+                <div class="network-node node-ci">CI/CD</div>
+                <div class="network-node node-prod">PROD</div>
+                <div class="network-line line-1"></div>
+                <div class="network-line line-2"></div>
+                <div class="network-line line-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="implementation" class="implementation-journey-section">
+        <div class="container">
+            <h2 class="section-title">Our DevOps Implementation Journey</h2>
+            <div class="journey-flow-container">
+                <div class="journey-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                    <h3>Phase 1: Infrastructure Setup</h3>
+                    <p>Automated AWS EC2 provisioning and Linux hardening with Ansible for a robust base.</p>
+                    <div class="card-details">
+                        <ul>
+                            <li>Provisioned AWS EC2 (`t2.micro`) with Ubuntu 20.04.</li>
+                            <li>Ansible playbooks for Docker, Nginx, Node.js, MongoDB setup.</li>
+                            <li>Configured secure SSH access & basic firewalls.</li>
+                        </ul>
+                        <img src="aws-ec2-dashboard.jpg" alt="AWS EC2 Dashboard" class="journey-screenshot">
+                    </div>
+                </div>
+
+                <div class="journey-connector"><i class="fas fa-arrow-right"></i></div>
+
+                <div class="journey-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon"><i class="fab fa-github-alt"></i></div>
+                    <h3>Phase 2: Version Control & GitFlow</h3>
+                    <p>Established a disciplined Git/GitHub workflow for collaborative and quality-controlled development.</p>
+                    <div class="card-details">
+                        <ul>
+                            <li>Implemented GitFlow branching strategy (main, development, feature).</li>
+                            <li>Protected branches requiring PR reviews.</li>
+                            <li>GitHub Issues for task tracking & commit linking.</li>
+                        </ul>
+                        <img src="github-repository-structure.jpg" alt="GitHub Repo Structure" class="journey-screenshot">
+                    </div>
+                </div>
+
+                <div class="journey-connector"><i class="fas fa-arrow-right"></i></div>
+
+                <div class="journey-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon"><i class="fas fa-pipeline"></i></div>
+                    <h3>Phase 3: CI/CD Automation</h3>
+                    <p>Built an automated Jenkins pipeline for continuous integration and rapid, reliable deployments.</p>
+                    <div class="card-details">
+                        <ul>
+                            <li>Jenkins setup with "Pipeline as Code" (Jenkinsfile).</li>
+                            <li>Automated Linting, Unit/Integration Testing (Jest/Supertest).</li>
+                            <li>Docker image build & push to Docker Hub.</li>
+                            <li>Slack notifications & basic rollback logic.</li>
+                        </ul>
+                        <img src="jenkins-pipeline-view.jpg" alt="Jenkins Pipeline" class="journey-screenshot">
+                    </div>
+                </div>
+
+                <div class="journey-connector"><i class="fas fa-arrow-right"></i></div>
+
+                <div class="journey-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-icon"><i class="fab fa-docker"></i></div>
+                    <h3>Phase 4: Containerization & Proxy</h3>
+                    <p>Containerized the application with Docker and used Nginx for efficient reverse proxying.</p>
+                    <div class="card-details">
+                        <ul>
+                            <li>Containerized Frontend (React), Backend (Node.js), Database (MongoDB).</li>
+                            <li>Docker Compose for multi-container orchestration.</li>
+                            <li>Nginx configured as reverse proxy & static file server.</li>
+                        </ul>
+                        <img src="docker-containers-running.jpg" alt="Docker Containers" class="journey-screenshot">
+                    </div>
+                </div>
+
+                <div class="journey-connector"><i class="fas fa-arrow-right"></i></div>
+
+             
+            </div>
+            <p class="journey-summary">This systematic approach allowed us to build, deploy, and manage ShopSync with high efficiency and reliability, demonstrating a practical application of core DevOps principles.</p>
+        </div>
+    </section>
+
+    <section id="tech-stack" class="tech-section">
+        <div class="container">
+            <h2 class="section-title">DevOps Tools & Technology Stack</h2>
+            <div class="tech-categories">
+                <div class="tech-category">
+                    <h3><i class="fas fa-desktop"></i> Frontend</h3>
+                    <div class="tech-icons">
+                        <div class="tech-item">
+                            <i class="fab fa-react"></i>
+                            <span>React.js</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-layer-group"></i>
+                            <span>Redux</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>Styled Components</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3><i class="fas fa-server"></i> Backend & Database</h3>
+                    <div class="tech-icons">
+                        <div class="tech-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-code"></i>
+                            <span>Express.js</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-database"></i>
+                            <span>Mongoose ODM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3><i class="fas fa-tools"></i> DevOps Tools</h3>
+                    <div class="tech-icons">
+                        <div class="tech-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-jenkins"></i>
+                            <span>Jenkins</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS EC2</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-server"></i>
+                            <span>Nginx</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-ansible"></i>
+                            <span>Ansible</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-flask"></i>
+                            <span>Jest / Supertest</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="results" class="results-section">
+        <div class="container">
+            <h2 class="section-title">Key Results & Achievements</h2>
+            <div class="results-grid">
+                <div class="result-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="result-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Infrastructure Automation</h3>
+                    <div class="result-stats">
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Configured via Code</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">~15min</span>
+                            <span class="stat-label">Environment Setup Time (from days)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="result-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="result-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Deployment Efficiency</h3>
+                    <div class="result-stats">
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Daily Deployments</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">&lt;5min</span>
+                            <span class="stat-label">Avg. Deployment Time</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">Zero</span>
+                            <span class="stat-label">Production Downtime</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="result-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="result-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Quality & Reliability</h3>
+                    <div class="result-stats">
+                        <div class="stat">
+                            <span class="stat-number">95%</span>
+                            <span class="stat-label">Bugs Caught by Automated Tests</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Environment Consistency</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">Increased</span>
+                            <span class="stat-label">Developer Productivity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="section-description results-summary">
+                By implementing a robust DevOps strategy, we significantly accelerated our development cycle, improved application stability, and established a foundation for future scalability.
+            </p>
+        </div>
+    </section>
+
+    <section id="future" class="future-section">
+        <div class="container">
+            <h2 class="section-title">Future Enhancements & Conclusion</h2>
+            <div class="future-content">
+                <div class="future-column" data-aos="fade-right">
+                    <h3><i class="fas fa-lightbulb"></i> DevOps Next Steps</h3>
+                    <ul>
+                        <li>Terraform for Infrastructure as Code: Evolve from basic scripting to advanced IaC for full infrastructure provisioning.</li>
+                        <li>Prometheus and Grafana for Advanced Monitoring: Implement robust monitoring and visualization for deeper insights into system health and performance.</li>
+                        <li>Kubernetes Orchestration: Migrate from Docker Compose to Kubernetes for highly scalable and resilient container orchestration.</li>
+                        <li>Blue-Green Deployment Strategy: Enhance deployment safety with zero-downtime releases and instant rollbacks.</li>
+                        <li>Security Scanning Integration: Further integrate SAST/DAST tools into the CI/CD pipeline.</li>
+                    </ul>
+                </div>
+                <div class="future-column" data-aos="fade-left">
+                    <h3><i class="fas fa-shopping-cart"></i> ShopSync Product Roadmap</h3>
+                    <ul>
+                        <li>AI-powered Shopping Suggestions: Leverage machine learning to suggest items based on past purchases and trends.</li>
+                        <li>Voice Command Integration: Allow users to add items or manage lists using voice commands.</li>
+                        <li>Advanced Analytics Dashboard: Provide users with insights into their spending habits and popular items.</li>
+                        <li>Offline Capabilities: Enable users to view and modify lists without an internet connection, syncing when reconnected.</li>
+                        <li>Cross-Platform Mobile Apps: Develop native iOS and Android applications.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="conclusion" data-aos="fade-up">
+                <h3>Conclusion</h3>
+                <p>This project successfully demonstrates the power of a well-implemented DevOps pipeline in building and delivering a real-world application. We established a continuous delivery model that ensures high quality, rapid iteration, and operational efficiency, setting ShopSync up for continuous growth and innovation. This journey has not only built a functional application but also a resilient and automated delivery system.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team-section">
+        <div class="container">
+            <h2 class="section-title">Our Team</h2>
+            <div class="team-table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>USN</th>
+                            <th>Role</th>
+                            <th>Portfolio/Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Akhilesh Joshi</td>
+                            <td>02FE22BCS013</td>
+                            <td>DevOps Engineer / Backend Dev</td>
+                            <td><a href="https://akhilesh-devops-portfolio.netlify.app/" target="_blank" rel="noopener noreferrer">View Portfolio</a></td>
+                        </tr>
+                        <tr>
+                            <td>Atharv Shirgurkar</td>
+                            <td>02FE22BCS024</td>
+                            <td>Frontend Developer / UI/UX</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>Dilip Rajpurohit</td>
+                            <td>02FE22BCS035</td>
+                            <td>DevOps Engineer / Infrastructure</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>Saniya Kadarbhai</td>
+                            <td>02FE22BCS106</td>
+                            <td>Project Lead / Full-stack Dev</td>
+                            <td><a href="#" target="_blank" rel="noopener noreferrer">My Portfolio (You are here!)</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="team-contact">Feel free to connect with us to learn more about the project or our individual contributions!</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section light-bg">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-description">Have questions about our DevOps journey or ShopSync? Reach out to us!</p>
+            <div class="contact-info-grid">
+                <div class="contact-info-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p><a href="mailto:contact@shopsync.com">contact@shopsync.com</a></p>
+                </div>
+                <div class="contact-info-card">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub Repository</h3>
+                    <p><a href="https://github.com/your-org/shopsync-devops" target="_blank" rel="noopener noreferrer">github.com/shopsync-devops</a></p>
+                </div>
+                <div class="contact-info-card">
+                    <i class="fas fa-link"></i>
+                    <h3>Deployed Application</h3>
+                    <p><a href="https://shopsync.netlify.app/" target="_blank" rel="noopener noreferrer">shopsync.netlify.app</a></p>
+                </div>
+            </div>
+            <p class="contact-footer">We're always open to discussing new challenges and sharing our experiences!</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 ShopSync DevOps Project. Built by Team B1. All Rights Reserved.</p>
+            <p>Portfolio curated by Saniya Kadarbhai.</p>
+            <div class="footer-glow"></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800, // animation duration
+            once: true // animations once
+        });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</body>
+</html>
